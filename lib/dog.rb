@@ -75,7 +75,7 @@ class Dog
     dog_id = row[0]
     dog_name = row[1]
     dog_breed = row[2]
-    
+    dog = Dog.new(id: dog_id, name: dog_name, breed: dog_breed)
   end
 
 end
