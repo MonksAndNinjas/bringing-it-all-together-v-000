@@ -58,7 +58,7 @@ class Dog
     sql = <<-SQL
       SELECT *
       FROM dogs
-      WHERE 
+      WHERE
     SQL
   end
 
