@@ -50,8 +50,8 @@ class Dog
       WHERE id = ?
     SQL
 
-    DB[:conn].execute(sql, number)[0].map do |row|
-      
+    dog = DB[:conn].execute(sql, number)[0][0]
+    
   end
 
 end
