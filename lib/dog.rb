@@ -30,12 +30,11 @@ class Dog
 
   def save
     sql = <<-SQL
-      INSERT INTO dogs VALUES (?, ?)
+      UPDATE dogs VALUES (?, ?)
     SQL
 
-    DB[:conn].execute(sql, self.name, self.breed)
+    DB[:conn].execute(sql, self.name, self.breed)  
     @id = DB[:conn].execute("SELECT MAX(id) FROM dogs")[0][0]
-    self
   end
 
 end
