@@ -50,8 +50,8 @@ class Dog
       WHERE id = ?
     SQL
 
-    dog = DB[:conn].execute(sql, number)[0][0]
-    
+    dog = DB[:conn].execute(sql, number)[0]
+    dog_id = dog[]
   end
 
 end
