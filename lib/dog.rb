@@ -51,7 +51,10 @@ class Dog
     SQL
 
     dog = DB[:conn].execute(sql, number)[0]
-    dog_id = dog[]
+    dog_id = dog[0]
+    dog_name = dog[1]
+    dog_breed = dog[2]
+    Dog.new(dog_id, dog_name, dog_breed)
   end
 
 end
