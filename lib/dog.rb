@@ -71,4 +71,8 @@ class Dog
     dog
   end
 
+  def self.new_from_db(row)
+
+  end
+
 end
