@@ -54,7 +54,7 @@ class Dog
     dog_id = dog[0]
     dog_name = dog[1]
     dog_breed = dog[2]
-    Dog.new(dog_id, dog_name, dog_breed)
+    Dog.new(id: dog_id, name: dog_name, breed: dog_breed)
   end
 
 end
